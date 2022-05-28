@@ -1,0 +1,132 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "zombieId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "dna",
+						"type": "uint256"
+					}
+				],
+				"name": "NewZombie",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_zombieId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_targetDna",
+						"type": "uint256"
+					}
+				],
+				"name": "feedAndMultiply",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "generateRandomZombie",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "zombies",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "dna",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Zombiefeeding.sol": "ZombieFeeding"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Zombiefactory.sol": {
+			"keccak256": "0xe23fdb989daa1979e06ea436e558a97fb57b0ef4e3047d7a63e833fb459d7ae9",
+			"urls": [
+				"bzz-raw://172b356585745e896816949b3ee2b9bb198899bca7506a763c6288d97c21369d",
+				"dweb:/ipfs/QmcJvYaxbQK4C7qhBaJs89VpDh7sSABMPT92ZJPJxVgbbT"
+			]
+		},
+		"contracts/Zombiefeeding.sol": {
+			"keccak256": "0xee6492c6c8a4022b0a1532e2bd61e29f66dd98593c5e29d1f60829c1e1ffa3fe",
+			"urls": [
+				"bzz-raw://e344275b8333f9737a50f07df6a0911590b9e7fd53f0d91a05a00928115b1c3f",
+				"dweb:/ipfs/QmQhncND75ozbefeN9CpyKXJfAJAinCmfPCStqZnwaLNKq"
+			]
+		}
+	},
+	"version": 1
+}
