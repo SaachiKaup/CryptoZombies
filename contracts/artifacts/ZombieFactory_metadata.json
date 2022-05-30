@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
@@ -31,6 +31,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -39,6 +58,52 @@
 					}
 				],
 				"name": "generateRandomZombie",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -62,6 +127,16 @@
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "level",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "readyTime",
+						"type": "uint32"
 					}
 				],
 				"stateMutability": "view",
@@ -70,12 +145,36 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"isOwner()": {
+					"returns": {
+						"_0": "true if `msg.sender` is the owner of the contract."
+					}
+				},
+				"owner()": {
+					"returns": {
+						"_0": "the address of the owner."
+					}
+				},
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract."
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"renounceOwnership()": {
+					"notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+				}
+			},
 			"version": 1
 		}
 	},
@@ -95,11 +194,18 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Zombiefactory.sol": {
-			"keccak256": "0x23107925613762628e81921cab01ac060a009a768142af3695799e5d4ed5bc81",
+		"contracts/OwnableZombie.sol": {
+			"keccak256": "0xf09951a477a38cd989c99db35c07d08fd393d8ec43ac1c26370dfe85d4f1fe30",
 			"urls": [
-				"bzz-raw://8d18f5b3a1209e9ad320b72d08d2995d932ab25e69b665940ebe62a24791265b",
-				"dweb:/ipfs/QmbfUD2EgdzAtfJ5kH6qdTwyrcK7iPuZbuqHtyfY3DXMFr"
+				"bzz-raw://e591b7837a11f6689c15b99cfb56ab979d4e9761d135d850378f79502fc4e98d",
+				"dweb:/ipfs/QmaSPkznG8RLB1WtamESU7cvN8ZmB7NQVarRsYMbgQeFB7"
+			]
+		},
+		"contracts/Zombiefactory.sol": {
+			"keccak256": "0x7e9d1787b92dbceb576a174d48229af4b6712d353737d0145e6b3a50f09ee9de",
+			"urls": [
+				"bzz-raw://b0769c7694c83238d9162e312c8a5fbf1002036c70f8583660486813f39957e7",
+				"dweb:/ipfs/QmPdxHTCX4UXF9ndywXoJYWfSk51JRHc6Vm8DvKRuivAyH"
 			]
 		}
 	},
