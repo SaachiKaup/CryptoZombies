@@ -112,10 +112,10 @@
 			]
 		},
 		"contracts/Zombiefeeding.sol": {
-			"keccak256": "0x2ba84dc2df5c67d287a8079e1289204b46c0309c41667ba613720c5afa94c8ab",
+			"keccak256": "0xd4089cad0963269975ccca901303d072f7fc8bf964f128896de8fb8b232540a1",
 			"urls": [
-				"bzz-raw://a257464e3d7ae3585a0dfb21bb3817830acf3a6e622ee2fb1dd55ebf8589b933",
-				"dweb:/ipfs/QmaWpCvWKu9RdhgL1o57mbmHv9qKhTMWGyZLdwir1jbFtY"
+				"bzz-raw://7b097b5c2984afeecaa391f28bf77a2a288df9b88031803aa48432a00bd3bb3a",
+				"dweb:/ipfs/Qmf5fAHhRFjc9yfH6eTCZRtMTgQrYMWuNr7GaGRE8G9m2a"
 			]
 		}
 	},
