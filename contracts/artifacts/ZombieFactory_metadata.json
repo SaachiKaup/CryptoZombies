@@ -202,10 +202,10 @@
 			]
 		},
 		"contracts/Zombiefactory.sol": {
-			"keccak256": "0x7e9d1787b92dbceb576a174d48229af4b6712d353737d0145e6b3a50f09ee9de",
+			"keccak256": "0xa718cbdf38d24b598bf66b5d6f52c429a10f624e7f1410e042bfd5802d2bd22c",
 			"urls": [
-				"bzz-raw://b0769c7694c83238d9162e312c8a5fbf1002036c70f8583660486813f39957e7",
-				"dweb:/ipfs/QmPdxHTCX4UXF9ndywXoJYWfSk51JRHc6Vm8DvKRuivAyH"
+				"bzz-raw://5c0323777431c60db52aad9666f7062f67c185539f9e351530042c168c08e2bb",
+				"dweb:/ipfs/QmR1g5vQiRW5tWSgbJfwZSehHo92jSpDhDygHVvABWXFsv"
 			]
 		}
 	},

@@ -6,7 +6,7 @@ contract ZombieFactory is Ownable {
     uint dnaDigits = 16; //permanently stored, similar to writing to a db
     uint dnaModulus = 10 ** dnaDigits; //exponential like python
     event NewZombie(uint zombieId, string name, uint dna);
-    uint coolDownTime = 86400;
+    uint coolDownTime = 1 days;
 
 //hould be in different file?
     struct Zombie { //complex data type
