@@ -1,7 +1,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 import "./Zombiefactory.sol";
-
+//giving error here, says the contract needs to be abstract
 contract KittyInterface {
     function getKitty(uint256 _id) external view returns (
         bool isGestating,
