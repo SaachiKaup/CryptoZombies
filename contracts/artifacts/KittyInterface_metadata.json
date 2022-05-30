@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Zombiefeeding.sol": "KittyInterface"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Zombiefactory.sol": {
+			"keccak256": "0x23107925613762628e81921cab01ac060a009a768142af3695799e5d4ed5bc81",
+			"urls": [
+				"bzz-raw://8d18f5b3a1209e9ad320b72d08d2995d932ab25e69b665940ebe62a24791265b",
+				"dweb:/ipfs/QmbfUD2EgdzAtfJ5kH6qdTwyrcK7iPuZbuqHtyfY3DXMFr"
+			]
+		},
+		"contracts/Zombiefeeding.sol": {
+			"keccak256": "0x51c6923f15f94e05cccda1d2379a47e816d0fb44ec8bcbdb19149341cdda75a2",
+			"urls": [
+				"bzz-raw://bf56996ce5d7c87edb6e0155910abdebd9ce4397f422a4768c6bbefbdf2dd508",
+				"dweb:/ipfs/QmUeGcjEZEqfqQg8spy6GHgoRCf6WhyrsmFqNGHC9TwY4K"
+			]
+		}
+	},
+	"version": 1
+}
