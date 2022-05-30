@@ -1,16 +1,10 @@
 {
 	"compiler": {
-		"version": "0.5.17+commit.d19bba13"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
-			{
-				"inputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
 			{
 				"anonymous": false,
 				"inputs": [
@@ -31,7 +25,6 @@
 				"type": "event"
 			},
 			{
-				"constant": true,
 				"inputs": [],
 				"name": "isOwner",
 				"outputs": [
@@ -41,12 +34,10 @@
 						"type": "bool"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"constant": true,
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -56,21 +47,17 @@
 						"type": "address"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"constant": false,
 				"inputs": [],
 				"name": "renounceOwnership",
 				"outputs": [],
-				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -80,22 +67,26 @@
 				],
 				"name": "transferOwnership",
 				"outputs": [],
-				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
 			"details": "The Ownable contract has an owner address, and provides basic authorization control functions, this simplifies the implementation of \"user permissions\".",
+			"kind": "dev",
 			"methods": {
 				"constructor": {
 					"details": "The Ownable constructor sets the original `owner` of the contract to the sender account."
 				},
 				"isOwner()": {
-					"return": "true if `msg.sender` is the owner of the contract."
+					"returns": {
+						"_0": "true if `msg.sender` is the owner of the contract."
+					}
 				},
 				"owner()": {
-					"return": "the address of the owner."
+					"returns": {
+						"_0": "the address of the owner."
+					}
 				},
 				"renounceOwnership()": {
 					"details": "Allows the current owner to relinquish control of the contract."
@@ -107,22 +98,28 @@
 					}
 				}
 			},
-			"title": "Ownable"
+			"title": "Ownable",
+			"version": 1
 		},
 		"userdoc": {
+			"kind": "user",
 			"methods": {
 				"renounceOwnership()": {
 					"notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
 				}
-			}
+			},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Ownable.sol": "Ownable"
+			"contracts/OwnableZombie.sol": "Ownable"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -130,11 +127,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Ownable.sol": {
-			"keccak256": "0x33f9862afb90391d02eed330569a92bc9143dd1cb5d6661d737bcedb22f24c68",
+		"contracts/OwnableZombie.sol": {
+			"keccak256": "0xf09951a477a38cd989c99db35c07d08fd393d8ec43ac1c26370dfe85d4f1fe30",
 			"urls": [
-				"bzz-raw://e8f11612996616032f44968b1850c1e71a94a368094141a23f229f2c1a260990",
-				"dweb:/ipfs/QmXaxow6LX1FHFKXvMHbKrSn12csP81Fegmbu8HvhUd6MB"
+				"bzz-raw://e591b7837a11f6689c15b99cfb56ab979d4e9761d135d850378f79502fc4e98d",
+				"dweb:/ipfs/QmaSPkznG8RLB1WtamESU7cvN8ZmB7NQVarRsYMbgQeFB7"
 			]
 		}
 	},

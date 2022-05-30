@@ -1,6 +1,8 @@
 pragma solidity >=0.7.0 <0.9.0;
 
-contract ZombieFactory {
+import "./OwnableZombie.sol";
+
+contract ZombieFactory is Ownable {
     uint dnaDigits = 16; //permanently stored, similar to writing to a db
     uint dnaModulus = 10 ** dnaDigits; //exponential like python
     event NewZombie(uint zombieId, string name, uint dna);

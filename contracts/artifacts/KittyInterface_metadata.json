@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
@@ -105,10 +105,10 @@
 			]
 		},
 		"contracts/Zombiefeeding.sol": {
-			"keccak256": "0x253164347bbc5487a6fad3c9f3b9022bbc6b6bb7e84938358e13188b25aa7ff8",
+			"keccak256": "0xb843a086caa59645b1e8218b34ef912d450eff263ca423bed53ef87f3219c324",
 			"urls": [
-				"bzz-raw://3c56f7d18069f6f8c62e1461d204d761f04c741686e85f9e1518513a92733c80",
-				"dweb:/ipfs/QmVvX7JAq23bDArR44URsWNKYiXsotb1Ks3ed4AoNuQugh"
+				"bzz-raw://e09dae73d72652290b4b931b7c5cba9326a5f961220e62d508e7fb298f3f25ca",
+				"dweb:/ipfs/QmVUWX6EhBzG9CnSGVDpYXusFY9SDUtsPJnjp2hwRuMYDT"
 			]
 		}
 	},
