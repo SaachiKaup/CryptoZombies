@@ -26,15 +26,11 @@ contract ZombieFactory {
 //passed by ref
 
 //private function anmes start with underscore(naming convention)
-    function _createZombie(string memory _name, uint _dna) private {
+    function _createZombie(string memory _name, uint _dna) internal {
         zombies.push(Zombie(_dna, _name));
         zombieToOwner[zombies.length - 1] = msg.sender;
         ownerZombieCount[msg.sender]++;
         emit NewZombie(zombies.length - 1, _name, _dna);
-    }
-
-    function createZombie(string memory _name, uint _dna) public {
-        _createZombie(_name, _dna);
     }
 
 

@@ -8,6 +8,6 @@ contract ZombieFeeding is ZombieFactory {
         Zombie storage myZombie = zombies[_zombieId];
         _targetDna = _targetDna % dnaModulus; //it's a variable copy
         uint newDna = (_targetDna + myZombie.dna) / 2;
-        createZombie("NoName", newDna);
+        _createZombie("NoName", newDna);
     }
 }
