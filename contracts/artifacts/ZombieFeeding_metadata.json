@@ -31,6 +31,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -85,6 +104,39 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -93,6 +145,19 @@
 					}
 				],
 				"name": "setKittyContractAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -124,12 +189,36 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"isOwner()": {
+					"returns": {
+						"_0": "true if `msg.sender` is the owner of the contract."
+					}
+				},
+				"owner()": {
+					"returns": {
+						"_0": "the address of the owner."
+					}
+				},
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract."
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"renounceOwnership()": {
+					"notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+				}
+			},
 			"version": 1
 		}
 	},
@@ -149,18 +238,25 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Zombiefactory.sol": {
-			"keccak256": "0x23107925613762628e81921cab01ac060a009a768142af3695799e5d4ed5bc81",
+		"contracts/OwnableZombie.sol": {
+			"keccak256": "0xf09951a477a38cd989c99db35c07d08fd393d8ec43ac1c26370dfe85d4f1fe30",
 			"urls": [
-				"bzz-raw://8d18f5b3a1209e9ad320b72d08d2995d932ab25e69b665940ebe62a24791265b",
-				"dweb:/ipfs/QmbfUD2EgdzAtfJ5kH6qdTwyrcK7iPuZbuqHtyfY3DXMFr"
+				"bzz-raw://e591b7837a11f6689c15b99cfb56ab979d4e9761d135d850378f79502fc4e98d",
+				"dweb:/ipfs/QmaSPkznG8RLB1WtamESU7cvN8ZmB7NQVarRsYMbgQeFB7"
+			]
+		},
+		"contracts/Zombiefactory.sol": {
+			"keccak256": "0xc610a3d6e01bf9e1758bfb2928c8208fb09c356a1f1a2ee72289ed2a1765b194",
+			"urls": [
+				"bzz-raw://c2128d4837d4fbc6f6df2fd2ea23e00771138897e5e01047d42aba2a64014746",
+				"dweb:/ipfs/QmZFpwE79WanCP5Vp1k9ztozZ4vyGxwa7E1aHsNnqNFCXe"
 			]
 		},
 		"contracts/Zombiefeeding.sol": {
-			"keccak256": "0xb843a086caa59645b1e8218b34ef912d450eff263ca423bed53ef87f3219c324",
+			"keccak256": "0x37cdef6eca6e6ac4d9ad51681ed33c07a3faf29c195dcdf6db3fb3931fa13087",
 			"urls": [
-				"bzz-raw://e09dae73d72652290b4b931b7c5cba9326a5f961220e62d508e7fb298f3f25ca",
-				"dweb:/ipfs/QmVUWX6EhBzG9CnSGVDpYXusFY9SDUtsPJnjp2hwRuMYDT"
+				"bzz-raw://4c0f7a4ce23d500ab9575772f14a35c82e103ad12f62858f9fd01990449934af",
+				"dweb:/ipfs/QmYstcxGoW6XPsbMNcsnGZh9a6q71ouMigGBS8r4BmYxg2"
 			]
 		}
 	},
