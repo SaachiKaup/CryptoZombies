@@ -4,7 +4,72 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getKitty",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isGestating",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isReady",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cooldownIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nextActionAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "siringWithId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "birthTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "matronId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sireId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "generation",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "genes",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -40,10 +105,10 @@
 			]
 		},
 		"contracts/Zombiefeeding.sol": {
-			"keccak256": "0x51c6923f15f94e05cccda1d2379a47e816d0fb44ec8bcbdb19149341cdda75a2",
+			"keccak256": "0x253164347bbc5487a6fad3c9f3b9022bbc6b6bb7e84938358e13188b25aa7ff8",
 			"urls": [
-				"bzz-raw://bf56996ce5d7c87edb6e0155910abdebd9ce4397f422a4768c6bbefbdf2dd508",
-				"dweb:/ipfs/QmUeGcjEZEqfqQg8spy6GHgoRCf6WhyrsmFqNGHC9TwY4K"
+				"bzz-raw://3c56f7d18069f6f8c62e1461d204d761f04c741686e85f9e1518513a92733c80",
+				"dweb:/ipfs/QmVvX7JAq23bDArR44URsWNKYiXsotb1Ks3ed4AoNuQugh"
 			]
 		}
 	},

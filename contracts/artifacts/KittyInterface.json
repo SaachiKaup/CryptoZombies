@@ -34,27 +34,88 @@
 			"functionDebugData": {},
 			"generatedSources": [],
 			"linkReferences": {},
-			"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220668805997dc7dfae55f004083b106515693a8ceb374d33225185abfb7f605aef64736f6c63430008070033",
-			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH7 0x8805997DC7DFAE SSTORE CREATE DIV ADDMOD EXTCODESIZE LT PUSH6 0x15693A8CEB37 0x4D CALLER 0x22 MLOAD DUP6 0xAB 0xFB PUSH32 0x605AEF64736F6C63430008070033000000000000000000000000000000000000 ",
-			"sourceMap": "64:32:1:-:0;;;;;;;;;;;;;;;;;;;"
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
 		},
 		"deployedBytecode": {
 			"functionDebugData": {},
 			"generatedSources": [],
 			"immutableReferences": {},
 			"linkReferences": {},
-			"object": "6080604052600080fdfea2646970667358221220668805997dc7dfae55f004083b106515693a8ceb374d33225185abfb7f605aef64736f6c63430008070033",
-			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH7 0x8805997DC7DFAE SSTORE CREATE DIV ADDMOD EXTCODESIZE LT PUSH6 0x15693A8CEB37 0x4D CALLER 0x22 MLOAD DUP6 0xAB 0xFB PUSH32 0x605AEF64736F6C63430008070033000000000000000000000000000000000000 ",
-			"sourceMap": "64:32:1:-:0;;;;;"
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
 		},
-		"gasEstimates": {
-			"creation": {
-				"codeDepositCost": "12600",
-				"executionCost": "66",
-				"totalCost": "12666"
-			}
-		},
-		"methodIdentifiers": {}
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"getKitty(uint256)": "e98b7f4d"
+		}
 	},
-	"abi": []
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_id",
+					"type": "uint256"
+				}
+			],
+			"name": "getKitty",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "isGestating",
+					"type": "bool"
+				},
+				{
+					"internalType": "bool",
+					"name": "isReady",
+					"type": "bool"
+				},
+				{
+					"internalType": "uint256",
+					"name": "cooldownIndex",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "nextActionAt",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "siringWithId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "birthTime",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "matronId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "sireId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "generation",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "genes",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
 }
