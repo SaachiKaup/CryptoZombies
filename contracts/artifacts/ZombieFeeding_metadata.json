@@ -33,6 +33,24 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dna",
+						"type": "uint256"
+					}
+				],
+				"name": "createZombie",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_zombieId",
 						"type": "uint256"
@@ -114,17 +132,17 @@
 	},
 	"sources": {
 		"contracts/Zombiefactory.sol": {
-			"keccak256": "0xe23fdb989daa1979e06ea436e558a97fb57b0ef4e3047d7a63e833fb459d7ae9",
+			"keccak256": "0x1af70d8b4b69a2e76616673baf59f9884723dfefe16797fc17202348b8564322",
 			"urls": [
-				"bzz-raw://172b356585745e896816949b3ee2b9bb198899bca7506a763c6288d97c21369d",
-				"dweb:/ipfs/QmcJvYaxbQK4C7qhBaJs89VpDh7sSABMPT92ZJPJxVgbbT"
+				"bzz-raw://963f15b265f8e467433f27921973242af48a9ba0deed51f178bb1a32dbd1c478",
+				"dweb:/ipfs/QmfQk2PJWnU3YdhYhYP7WkzbPi7W5YZ2Hs21Jz67ya5qK1"
 			]
 		},
 		"contracts/Zombiefeeding.sol": {
-			"keccak256": "0xee6492c6c8a4022b0a1532e2bd61e29f66dd98593c5e29d1f60829c1e1ffa3fe",
+			"keccak256": "0x0264cad5d505e1835f0c81b594bbf3680d3163bf00a480c885ffffca37792115",
 			"urls": [
-				"bzz-raw://e344275b8333f9737a50f07df6a0911590b9e7fd53f0d91a05a00928115b1c3f",
-				"dweb:/ipfs/QmQhncND75ozbefeN9CpyKXJfAJAinCmfPCStqZnwaLNKq"
+				"bzz-raw://00516e9ae4a23dc50dcc67b81927de45d8c9c23e0bb9cad11a3c99fc20192314",
+				"dweb:/ipfs/QmW1bXzNZNgwdfAaP5VPD9EnJN8KpRzuXb5t7cBdcXELkq"
 			]
 		}
 	},

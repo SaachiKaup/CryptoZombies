@@ -96,10 +96,10 @@
 	},
 	"sources": {
 		"contracts/Zombiefactory.sol": {
-			"keccak256": "0xc5fae45d3ff72c9cb2210486e5a4929da97f003bb0f8107ac3a2c213557dbd33",
+			"keccak256": "0xb19c07a00f9e3c4be429f0268ea3beb8321f8a7400d926786cb2f05d656167ac",
 			"urls": [
-				"bzz-raw://499e7620ef6e0bc7fa954b12216ea5fe0b174c5a2f14daa956bf3d893c8551ba",
-				"dweb:/ipfs/QmQDDiCWKnrii9QR9eg9JvVotnLwo617cNxtu2WJmcpeBy"
+				"bzz-raw://f070757adff35fafe36c413093481ae3246a4c8f86bcba32f56ca5a7f0336e82",
+				"dweb:/ipfs/QmQD65UZnXDju8nTUTbUMgjN9cPkqY4eAfxqnrpXpzz5Rz"
 			]
 		}
 	},
