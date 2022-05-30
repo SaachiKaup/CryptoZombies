@@ -1,7 +1,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 import "./Zombiefactory.sol";
-//giving error here, says the contract needs to be abstract
+//Used to be contract
 interface KittyInterface {
     function getKitty(uint256 _id) external view returns (
         bool isGestating,
@@ -18,9 +18,13 @@ interface KittyInterface {
 }
 
 contract ZombieFeeding is ZombieFactory {
-    address ckAddress = 0x06012c8cf97BEaD5deAe237070F9587f8E7A266d;
+    
 
-    KittyInterface kittyContract = KittyInterface(ckAddress);
+    KittyInterface kittyContract;
+
+    function setKittyContractAddress(address _address) external {
+
+    }
 
     function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species) public {
         require(ownerZombieCount[msg.sender] == 0); //should be the same thing
