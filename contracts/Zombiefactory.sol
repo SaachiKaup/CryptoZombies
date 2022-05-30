@@ -6,7 +6,7 @@ contract ZombieFactory is Ownable {
     uint dnaDigits = 16; //permanently stored, similar to writing to a db
     uint dnaModulus = 10 ** dnaDigits; //exponential like python
     event NewZombie(uint zombieId, string name, uint dna);
-    uint coolDownTime = 1 days;
+    uint cooldownTime = 1 days;
 
 //hould be in different file?
     struct Zombie { //complex data type
@@ -32,7 +32,7 @@ contract ZombieFactory is Ownable {
 
 //private function anmes start with underscore(naming convention)
     function _createZombie(string memory _name, uint _dna) internal {
-        zombies.push(Zombie(_dna, _name, 1, uint32(block.timestamp + coolDownTime))); //now in the crypto zombies code
+        zombies.push(Zombie(_dna, _name, 1, uint32(block.timestamp + cooldownTime))); //now in the crypto zombies code
         zombieToOwner[zombies.length - 1] = msg.sender;
         ownerZombieCount[msg.sender]++;
         emit NewZombie(zombies.length - 1, _name, _dna);
